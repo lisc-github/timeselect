@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>time_</title>
+	<script src="components/time_comp.js"></script>
+	<script>
+
+	</script>
+	<style>
+		body{
+			background:#ddd;
+		}
+		#time{
+			width:300px;
+		}
+		.ipt{
+			overflow:hidden;
+			border:1px solid #ccc;
+			height:30px;
+		}
+		.ipt input{
+			float: left;
+			border:none;
+			width:84%;
+			height:100%;
+			padding-left:4%;
+		}
+		.ipt .pic{
+			float: right;
+			width:12%;
+			height:100%;
+			line-height:30px;
+			background:#ccc;
+			cursor:pointer;
+			text-align: center;
+		}
+		#time_box{
+			border:1px solid #cccccc;;
+			display:none;
+		}
+		.head_box{
+			overflow:hidden;
+			background: #b547e2;
+		}
+		.calender_prev,.calender_hd,.calender_next{
+			float: left;
+			width:10%;
+			height:30px;
+			text-align:center;
+			line-height:30px;
+		}
+		.calender_prev,.calender_next{
+			cursor:pointer;
+		}
+
+		.calender_hd{
+			width:80%;
+		}
+		.calender_tit{
+			overflow:hidden;
+			background: #b547e2;
+			height:30%;
+			padding:0 1%;
+		}
+		.calender_tit span{
+			float: left;
+			width:14.2%;
+			line-height:30px;;
+			text-align:center;
+		}
+		.calender_bd{
+			overflow:hidden;
+			background:#fff;
+			padding:4px 1%;
+		}
+		.calender_bd span{
+			float:left;
+			width:14.2%;
+			height:30px;
+			line-height:30px;
+			text-align:center;
+			background:#fff;
+			cursor: pointer;
+		}
+		.grey{
+			color:#ccc!important;
+		}
+	</style>
+</head>
+<body>
+<div id="time">
+	<div class="ipt">
+		<input type="text" placeholder="请选择时间" id="ipt">
+		<span class="pic">sss</span>
+	</div>
+	<div id="time_box">
+		<div class="head_box">
+			<div class="calender_prev">&lt;</div>
+			<div class="calender_hd"></div>
+			<div class="calender_next">&gt;</div>
+		</div>
+
+		<div class="calender_tit">
+			<span>日</span>
+			<span>一</span>
+			<span>二</span>
+			<span>三</span>
+			<span>四</span>
+			<span>五</span>
+			<span>六</span>
+		</div>
+		<div class="calender_bd">
+
+		</div>
+	</div>
+</div>
+<div>111111</div>
+</body>
+</html>
