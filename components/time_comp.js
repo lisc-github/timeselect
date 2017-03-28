@@ -7,6 +7,7 @@ function Time_comp(){
 	this.input = this.getById("ipt");
 	this.pic = this.getByClass("pic")[0];
 	this.timeBox = this.getById("time_box");
+	this.timeBox.style.display = 'none';
 	this.calenderHead = this.getByClass("calender_hd",this.timeBox)[0];
 	this.calenderBody = this.getByClass("calender_bd",this.timeBox)[0];
 	this.prev =  this.getByClass("calender_prev",this.timeBox)[0];
@@ -40,14 +41,13 @@ Time_comp.prototype = {
 		this.nextMethod();
 	},
 	fillTitle:function(){
-		console.log(this.month);
 		this.calenderHead.innerHTML = this.year+'年'+(this.month+1)+'月';
 	},
 	fillBody:function(){
 		var date = new Date().getDate();
-		var thisYear = this.year;
-		var thisMonth = this.month;
-		var thisDate = date;
+		var thisYear = new Date().getFullYear();
+		var thisMonth = new Date().getMonth();
+		var thisDate = new Date().getDate();
 		var firstDay = new Date(this.year, this.month, 1).getDay();
 		var finalDate = new Date(this.year,this.month+1,0).getDate();
 		var lastDate = new Date(this.year,this.month, 0).getDate();
